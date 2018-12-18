@@ -1,4 +1,4 @@
-# Union_Find
+# Union-Find
 Generic implementation of Union-Find data structure 
 
 ## To compile
