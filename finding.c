@@ -40,7 +40,8 @@ int size[W*H];
 
 /**
  * transforma coordenadas 2D num indíce de um array unidimensional.
- */int getArray( int x, int y ) {
+ */
+int getArray( int x, int y ) {
 	return array[x*W+y];
 }
 
