@@ -6,12 +6,12 @@
 /**
  * Comprimento da tabela.
  */
-#define W 20
+#define W 30
 
 /**
  * Altura da tabela. 
  */
-#define H 10
+#define H 20
 
 /**
  * Nós de execução.
