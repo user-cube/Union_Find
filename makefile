@@ -3,6 +3,6 @@ clean:
 	rm -f finding matrixA.txt matrixB.txt
 
 run:
-	./finding 
+	time ./finding 
 all:
 	cc -Wall -O2 finding.c -o finding
