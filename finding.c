@@ -6,12 +6,12 @@
 /**
  * Comprimento da tabela.
  */
-#define W 50
+#define W 20
 
 /**
  * Altura da tabela. 
  */
-#define H 35
+#define H 10
 
 /**
  * Nós de execução.
@@ -39,7 +39,7 @@ int array[W*H];
 int size[W*H]; 
 
 /**
- * transforma coordenadas 2D num indíce de um array unidimensional.
+ * Transforma coordenadas 2D num indíce de um array unidimensional.
  */
 int getArray( int x, int y ) {
 	return array[x*W+y];
@@ -61,8 +61,8 @@ void show(int arr[])
  * Gera a estrutura dos arrays para matlab.
  * Estes arrays são guardados em dois ficheiros:
  * 
- * matrixA.txt -
- * matrizB.txt -
+ * matrixA.txt
+ * matrizB.txt
  *
  *Após tudo gerado será tudo processado em Matlab / Octave.
  */
@@ -70,36 +70,48 @@ void showImage(int arr[H][W], int a)
 {
 	if (a == 1){
 		FILE *fp = fopen("matrixA.txt","w");
+		printf("Matriz A - \n");
 		if (fp == NULL)
 		{
 			printf("Error opening file!\n");
 			exit(1);
 		}
 		for(int i = 0; i < H; i++) {
-			for(int j = 0; j < W; j++)
+			for(int j = 0; j < W; j++){
 				fprintf(fp, "%d ", arr[i][j]);
-
-			if(i==H-1)
+				printf("%d ", arr[i][j]);
+			}
+			if(i==H-1){
 				fprintf(fp, "\n");
-			else
+				printf("\n");
+			}
+			else{
 				fprintf(fp,"\n");
+				printf("\n");
+			}
 		}
 	}
 	if (a == 2){
 		FILE *fb = fopen("matrixB.txt","w");
+		printf("Matriz B - \n");
 		if (fb == NULL)
 		{
 			printf("Error opening file!\n");
 			exit(1);
 		}
 		for(int i = 0; i < H; i++) {
-			for(int j = 0; j < W; j++)
+			for(int j = 0; j < W; j++){
 				fprintf(fb, "%d ", arr[i][j]);
-
-			if(i==H-1)
+				printf("%d ", arr[i][j]);
+			}
+			if(i==H-1){
 				fprintf(fb, "\n");
-			else
+				printf("\n");
+			}
+			else{
 				fprintf(fb,"\n");
+				printf("\n");
+			}
 		}
 	}	
 }
@@ -275,6 +287,7 @@ int main(int argc,char **argv)
 	double percentagem = media/(W*H)*100;
 	
 	a = 1;
+	printf("Array de representantes: \n");
 	show(array);
 	showImage(image, a);
 	draw(resolvido);
