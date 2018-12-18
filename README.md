@@ -6,7 +6,7 @@ Use our makefile:
 `make all`
 
 ## Running
-Use make file:
+Use makefile:
 `make run`
 
 ## Cleaning
