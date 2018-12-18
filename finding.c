@@ -164,7 +164,7 @@ void uni(int x, int y)
  */
 void adjacent(int x, int y)
 {
-	/**
+    /**
      * Verificar de baixo.
      */
     if(x > 0 && image[x-1][y] != 0) 
@@ -239,7 +239,7 @@ int main(int argc,char **argv)
         resolvido, 
         total_gerados = 0;
 
-	/**
+    /**
      * Ciclo principal do programa.
      */
     for(int i = 0; i < EXEC; i++) {
@@ -248,7 +248,7 @@ int main(int argc,char **argv)
     	unicos = 0;
 		resolvido = 0;
 		cont = 0;
-		/**
+	/**
          * Enquanto que não houver um caminho entre o topo e o fundo.
          */
         while(resolvido == 0) { 
