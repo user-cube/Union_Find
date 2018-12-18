@@ -1,0 +1,18 @@
+*
+!**/*.*
+
+
+max_*
+min_*
+hist.txt
+
+#files being edited
+*~
+
+# make and build files
+*.lst
+*.o
+*.eep
+*.lss
+*.map
+*.sym
