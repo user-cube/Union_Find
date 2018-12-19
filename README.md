@@ -2,7 +2,7 @@
 Generic implementation of Union-Find data structure 
 
 ## To compile
-Use our makefile:
+Use makefile:
 `make all`
 
 ## Running
